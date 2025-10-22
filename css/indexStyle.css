@@ -1,11 +1,17 @@
 .home {
-    background-color: black;
+    background-color: rgb(20,20,20);
     color: green;
     font-family: monospace;
     line-height: normal;
-    font-size: larger;
+    font-size: 28px;
     display: flex;
     align-content: left;
+}
+
+.navbarText {
+    color: black;
+    font-family: monospace;
+    font-size: 22px;
 }
 
 /* code adapted from https://codepen.io/denic/pen/GRoOxbM */

@@ -1,5 +1,29 @@
 .home {
     background-color: black;
     color: green;
-    font-family: Consolas;
+    font-family: monospace;
+    line-height: normal;
+    font-size: larger;
+    display: flex;
+    align-content: left;
+}
+
+/* code adapted from https://codepen.io/denic/pen/GRoOxbM */
+.typing {
+  width: 0;
+  animation: typing 2s steps(22);
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  margin: 0%;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 22ch;
+  }
 }

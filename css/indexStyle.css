@@ -33,3 +33,34 @@
     width: 22ch;
   }
 }
+
+/* code adapted from https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility */
+.hide {
+  animation: hide 0.0001s ease-out forwards;
+}
+
+@keyframes hide {
+  0% {
+    content-visibility: visible;
+    color: green;
+  }
+  100% {
+    content-visibility: hidden;
+    color: transparent;
+  }
+}
+
+.show {
+  animation: show 0.0001s ease-in forwards;
+}
+
+@keyframes show {
+  0% {
+    content-visibility: hidden;
+    color: transparent;
+  }
+  100% {
+    content-visibility: visible;
+    color: green;
+  }
+}
